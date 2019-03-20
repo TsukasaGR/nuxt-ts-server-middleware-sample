@@ -2,6 +2,7 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
+  srcDir: 'client/',
 
   /*
    ** Headers of the page
@@ -39,6 +40,8 @@ module.exports = {
     'nuxt-buefy',
     '@nuxtjs/pwa'
   ],
+
+  serverMiddleware: ['~~/api/'],
 
   /*
    ** Build configuration
